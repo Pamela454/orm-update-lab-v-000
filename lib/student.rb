@@ -58,7 +58,7 @@ class Student
     sql = <<-SQL
     SELECT *
     FROM students
-    WHERE name = (name)
+    WHERE name = ?
     SQL
 
     DB[:conn].execute(sql, name)
