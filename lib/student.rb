@@ -59,7 +59,7 @@ class Student
 
     SELECT *
     FROM songs
-    WHERE name = ?
+    WHERE name = (name)
     LIMIT 1
     SQL
   end
