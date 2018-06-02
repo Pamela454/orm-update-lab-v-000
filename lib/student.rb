@@ -43,12 +43,8 @@ class Student
   end
 
   def self.create
-    sql = <<-SQL
-    INSERT INTO students (name, grade)
-    VALUES (?, ?)
-    SQL
-
-    DB[:conn].execute(sql, self.name, self.grade)
+    new_student = Student.new
+    
   end
 
   def update
