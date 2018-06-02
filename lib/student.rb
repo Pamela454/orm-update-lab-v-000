@@ -23,6 +23,8 @@ class Student
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
   def drop_table
+    sql = <<-SQL 
+    DROP TABLE students 
   end
 
 end
