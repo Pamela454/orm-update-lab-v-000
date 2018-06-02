@@ -44,6 +44,7 @@ class Student
 
   def self.create
     sql = <<-SQL 
+    INSERT INTO students (name, grade)
   end
 
   def update
