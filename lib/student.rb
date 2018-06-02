@@ -28,7 +28,9 @@ class Student
   end
 
   def save
-    new_student = Student.new
+    sql = <<-SQL
+    INSERT INTO students (name, grade)
+    VALUES (?, ?)
   end
 
 
